@@ -1,0 +1,427 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"33 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"42 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"18 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"48
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+"56
+[v ___eetoi __eetoi `(ui  1 e 2 0 ]
+"64
+[v ___eetom __eetom `(um  1 e 3 0 ]
+"72
+[v ___eetol __eetol `(ul  1 e 4 0 ]
+"80
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+"87
+[v ___itoee __itoee `(ui  1 e 2 0 ]
+"94
+[v ___mtoee __mtoee `(um  1 e 3 0 ]
+"101
+[v ___ltoee __ltoee `(ul  1 e 4 0 ]
+"108
+[v ___eetoft __eetoft `(f  1 e 3 0 ]
+"116
+[v ___eetofl __eetofl `(d  1 e 3 0 ]
+"124
+[v ___fttoee __fttoee `(f  1 e 3 0 ]
+"131
+[v ___fltoee __fltoee `(d  1 e 3 0 ]
+"49 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"16 D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c
+[v _USART_Init USART_Init `(v  1 e 0 0 ]
+"56
+[v _USART_WriteChar USART_WriteChar `(v  1 e 0 0 ]
+[v i1_USART_WriteChar USART_WriteChar `(v  1 e 0 0 ]
+"62
+[v _USART_WriteString USART_WriteString `(v  1 e 0 0 ]
+[v i1_USART_WriteString USART_WriteString `(v  1 e 0 0 ]
+"73
+[v _USART_ReceiveChar USART_ReceiveChar `(uc  1 e 1 0 ]
+"94
+[v _I2C_Init I2C_Init `(v  1 e 0 0 ]
+"128
+[v _I2C_Idle I2C_Idle `(v  1 e 0 0 ]
+"134
+[v _I2C_Start I2C_Start `(v  1 e 0 0 ]
+"142
+[v _I2C_Restart I2C_Restart `(v  1 e 0 0 ]
+"150
+[v _I2C_Write I2C_Write `(v  1 e 0 0 ]
+"158
+[v _I2C_Read I2C_Read `(uc  1 e 1 0 ]
+"168
+[v _I2C_Stop I2C_Stop `(v  1 e 0 0 ]
+"176
+[v _I2C_ACK I2C_ACK `(v  1 e 0 0 ]
+"184
+[v _I2C_NACK I2C_NACK `(v  1 e 0 0 ]
+"192
+[v _ISR ISR `II(v  1 e 0 0 ]
+"395
+[v _main main `(v  1 e 0 0 ]
+"268 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic16f877a.h
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+[s S287 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"463
+[s S296 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S301 . 1 `S287 1 . 1 0 `S296 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES301  1 e 1 @11 ]
+[s S101 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+"534
+[u S110 . 1 `S101 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES110  1 e 1 @12 ]
+"785
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+[s S257 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"811
+[s S263 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S268 . 1 `S257 1 . 1 0 `S263 1 . 1 0 ]
+[v _SSPCONbits SSPCONbits `VES268  1 e 1 @20 ]
+[s S57 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"965
+[s S66 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S70 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S73 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S76 . 1 `S57 1 . 1 0 `S66 1 . 1 0 `S70 1 . 1 0 `S73 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES76  1 e 1 @24 ]
+"1029
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1035
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1396
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1591
+[v _PIE1bits PIE1bits `VES110  1 e 1 @140 ]
+"1707
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1724
+[v _SSPCON2bits SSPCON2bits `VES110  1 e 1 @145 ]
+"1774
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+[s S168 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"1834
+[s S177 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S182 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S188 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S193 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S198 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S203 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S208 . 1 `S168 1 . 1 0 `S177 1 . 1 0 `S182 1 . 1 0 `S188 1 . 1 0 `S193 1 . 1 0 `S198 1 . 1 0 `S203 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES208  1 e 1 @148 ]
+[s S20 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"1974
+[s S29 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S33 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S36 . 1 `S20 1 . 1 0 `S29 1 . 1 0 `S33 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES36  1 e 1 @152 ]
+"2028
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2231
+[v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
+"2237
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+"2255
+[v _EECON1 EECON1 `VEuc  1 e 1 @396 ]
+"2299
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+"2349
+[v _CARRY CARRY `VEb  1 e 0 @24 ]
+"2441
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2471
+[v _OERR OERR `VEb  1 e 0 @193 ]
+"2559
+[v _RD RD `VEb  1 e 0 @3168 ]
+"2759
+[v _WR WR `VEb  1 e 0 @3169 ]
+"2761
+[v _WREN WREN `VEb  1 e 0 @3170 ]
+"14 D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c
+[v _banco banco `uc  1 e 1 0 ]
+[v _entrada entrada `uc  1 e 1 0 ]
+[v _posicao posicao `uc  1 e 1 0 ]
+"395
+[v _main main `(v  1 e 0 0 ]
+{
+"417
+} 0
+"62
+[v _USART_WriteString USART_WriteString `(v  1 e 0 0 ]
+{
+[v USART_WriteString@str str `*.24DCCuc  1 a 1 wreg ]
+[v USART_WriteString@str str `*.24DCCuc  1 a 1 wreg ]
+[v USART_WriteString@str str `*.24DCCuc  1 a 1 2 ]
+"71
+} 0
+"56
+[v _USART_WriteChar USART_WriteChar `(v  1 e 0 0 ]
+{
+[v USART_WriteChar@USART_Data USART_Data `uc  1 a 1 wreg ]
+[v USART_WriteChar@USART_Data USART_Data `uc  1 a 1 wreg ]
+[v USART_WriteChar@USART_Data USART_Data `uc  1 a 1 0 ]
+"60
+} 0
+"16
+[v _USART_Init USART_Init `(v  1 e 0 0 ]
+{
+"18
+[v USART_Init@BR BR `i  1 a 2 25 ]
+"16
+[v USART_Init@BaudRate BaudRate `l  1 p 4 15 ]
+[v USART_Init@Mode Mode `i  1 p 2 19 ]
+"54
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"11
+[v ___aldiv@quotient quotient `l  1 a 4 11 ]
+"12
+[v ___aldiv@sign sign `uc  1 a 1 10 ]
+[v ___aldiv@counter counter `uc  1 a 1 9 ]
+"6
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"42
+} 0
+"94 D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c
+[v _I2C_Init I2C_Init `(v  1 e 0 0 ]
+{
+"126
+} 0
+"192
+[v _ISR ISR `II(v  1 e 0 0 ]
+{
+"337
+[v ISR@i i `uc  1 a 1 11 ]
+[v ISR@j j `uc  1 a 1 10 ]
+"393
+} 0
+"73
+[v _USART_ReceiveChar USART_ReceiveChar `(uc  1 e 1 0 ]
+{
+"75
+[v USART_ReceiveChar@USART_Data USART_Data `uc  1 a 1 4 ]
+"92
+} 0
+"62
+[v i1_USART_WriteString USART_WriteString `(v  1 e 0 0 ]
+{
+[v i1USART_WriteString@str str `*.24DCCuc  1 a 1 wreg ]
+[v i1USART_WriteString@str str `*.24DCCuc  1 a 1 wreg ]
+[v i1USART_WriteString@str str `*.24DCCuc  1 a 1 2 ]
+"71
+} 0
+"56
+[v i1_USART_WriteChar USART_WriteChar `(v  1 e 0 0 ]
+{
+[v i1USART_WriteChar@USART_Data USART_Data `uc  1 a 1 wreg ]
+[v i1USART_WriteChar@USART_Data USART_Data `uc  1 a 1 wreg ]
+[v i1USART_WriteChar@USART_Data USART_Data `uc  1 a 1 0 ]
+"60
+} 0
+"150
+[v _I2C_Write I2C_Write `(v  1 e 0 0 ]
+{
+[v I2C_Write@Byte Byte `uc  1 a 1 wreg ]
+[v I2C_Write@Byte Byte `uc  1 a 1 wreg ]
+"153
+[v I2C_Write@Byte Byte `uc  1 a 1 2 ]
+"156
+} 0
+"168
+[v _I2C_Stop I2C_Stop `(v  1 e 0 0 ]
+{
+"174
+} 0
+"134
+[v _I2C_Start I2C_Start `(v  1 e 0 0 ]
+{
+"140
+} 0
+"142
+[v _I2C_Restart I2C_Restart `(v  1 e 0 0 ]
+{
+"148
+} 0
+"158
+[v _I2C_Read I2C_Read `(uc  1 e 1 0 ]
+{
+"166
+} 0
+"184
+[v _I2C_NACK I2C_NACK `(v  1 e 0 0 ]
+{
+"190
+} 0
+"128
+[v _I2C_Idle I2C_Idle `(v  1 e 0 0 ]
+{
+"132
+} 0

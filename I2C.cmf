@@ -1,0 +1,655 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$startup.obj
+end_init CODE 0 12 12 3 2
+reset_vec CODE 0 0 0 3 2
+config CONFIG 0 2007 2007 1 2
+$I2C.obj
+cinit CODE 0 15 15 7 2
+intentry CODE 0 4 4 E 2
+text16 CODE 0 5BA 5BA D 2
+text15 CODE 0 5F8 5F8 8 2
+text14 CODE 0 5AC 5AC E 2
+text13 CODE 0 5DD 5DD B 2
+text12 CODE 0 5D2 5D2 B 2
+text11 CODE 0 5C7 5C7 B 2
+text10 CODE 0 59D 59D F 2
+text9 CODE 0 5F0 5F0 8 2
+text8 CODE 0 569 569 1C 2
+text7 CODE 0 585 585 18 2
+text6 CODE 0 1C 1C 210 2
+text5 CODE 0 54A 54A 1F 2
+text4 CODE 0 3DF 3DF 8F 2
+text3 CODE 0 46E 46E 6F 2
+text2 CODE 0 5E8 5E8 8 2
+text1 CODE 0 52A 52A 20 2
+maintext CODE 0 4DD 4DD 4D 2
+cstackBANK0 BANK0 1 20 20 1E 1
+cstackCOMMON COMMON 1 70 70 C 1
+bssBANK0 BANK0 1 3E 3E 1 1
+bssCOMMON COMMON 1 7C 7C 2 1
+strings STRING 0 300 300 DF 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 003F-006F 1
+BANK1 00A0-00EF 1
+BANK2 0110-016F 1
+BANK3 0190-01EF 1
+CODE 0003-0003 2
+CODE 022C-02FF 2
+CODE 0600-1FFF 2
+CONST 0003-0003 2
+CONST 022C-02FF 2
+CONST 0600-1FFF 2
+EEDATA 2100-21FF 2
+ENTRY 0003-0003 2
+ENTRY 022C-02FF 2
+ENTRY 0600-1FFF 2
+IDLOC 2000-2003 2
+RAM 003F-006F 1
+RAM 00A0-00EF 1
+RAM 0110-016F 1
+RAM 0190-01EF 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-010F 1
+SFR3 0180-018F 1
+STACK 0110-016F 1
+STRCODE 0003-0003 2
+STRCODE 022C-02FF 2
+STRCODE 0600-1FFF 2
+STRING 0003-0003 2
+STRING 022C-02FF 2
+STRING 0600-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$I2C.obj
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":192 4 intentry CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.as":510 15 cinit CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.as":513 15 cinit CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.as":532 15 cinit CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.as":533 16 cinit CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.as":536 17 cinit CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.as":542 18 cinit CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.as":543 18 cinit CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.as":544 19 cinit CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":192 1C text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":195 1C text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":198 1E text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":199 26 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":202 2C text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":204 30 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":205 36 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":206 3E text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":208 44 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":211 47 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":214 4D text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":215 55 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":218 5B text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":223 5F text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":224 64 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":225 69 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":226 72 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":227 7A text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":228 80 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":229 85 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":232 8A text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":233 90 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":235 91 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":236 95 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":237 96 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":239 97 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":241 9B text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":243 9C text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":212 A0 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":249 A1 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":251 A5 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":252 AB text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":253 B3 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":255 B9 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":258 BC text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":260 C2 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":261 C7 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":262 CC text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":263 D2 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":265 D8 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":267 DD text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":268 E3 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":269 EB text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":270 F0 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":271 F5 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":273 FA text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":275 100 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":279 106 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":259 10A text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":285 10B text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":287 10F text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":288 115 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":289 11D text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":291 123 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":294 126 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":297 12C text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":298 134 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":301 13A text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":306 13E text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":307 143 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":308 148 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":309 151 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":310 159 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":311 15F text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":312 164 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":315 169 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":316 16F text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":318 170 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":319 174 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":320 175 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":322 176 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":324 17A text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":326 17B text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":295 17F text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":332 180 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":334 184 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":335 189 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":338 18E text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":339 193 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":340 194 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":341 19D text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":342 1A3 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":339 1A9 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":346 1AE text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":347 1B3 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":351 1B8 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":353 1BC text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":355 1BD text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":358 1C0 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":376 1C6 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":377 1C7 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":378 1C8 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":382 1CC text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":360 1D0 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":361 1D5 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":362 1DA text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":363 1E0 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":365 1E6 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":367 1EB text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":368 1F1 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":369 1F9 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":370 1FE text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":371 203 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":373 208 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":376 20E text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":386 214 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":359 218 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":391 219 text6 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":393 21F text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":6 3DF text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":14 3DF text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":15 3E2 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":16 3E4 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":17 3EF text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":18 3F1 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":19 3F1 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":20 3F3 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":21 3FE text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":23 402 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":24 40A text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":25 410 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":26 412 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":27 414 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":28 41D text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":26 421 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":31 422 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":32 42B text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":33 43B text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":34 449 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":36 44A text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":37 453 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":39 457 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":40 45A text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c":41 465 text4 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":16 46E text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":18 46E text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":21 472 text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":23 476 text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":28 488 text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":29 4B9 text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":33 4BD text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":34 4BE text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":35 4BF text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":36 4C0 text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":37 4C1 text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":38 4CA text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":39 4CB text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":42 4CC text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":43 4CF text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":44 4D0 text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":45 4D1 text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":46 4D2 text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":47 4D3 text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":48 4D4 text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":49 4D5 text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":52 4D6 text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":53 4D9 text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":54 4DC text3 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":395 4DD maintext CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":399 4DD maintext CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":400 4E1 maintext CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":402 4E5 maintext CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":403 4EA maintext CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":405 4FD maintext CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":406 4FE maintext CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":408 4FF maintext CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":409 505 maintext CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":411 50B maintext CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":413 51A maintext CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":415 51A maintext CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":413 529 maintext CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":62 52A text1 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":65 52D text1 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":68 537 text1 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":69 543 text1 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":65 549 text1 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":94 54A text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":97 54A text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":98 54D text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":99 54E text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":100 54F text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":101 550 text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":102 551 text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":103 552 text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":104 553 text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":107 554 text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":109 556 text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":110 557 text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":111 558 text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":112 559 text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":113 55A text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":114 55B text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":115 55C text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":116 55D text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":118 55E text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":119 561 text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":120 562 text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":121 563 text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":122 564 text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":123 565 text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":124 566 text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":125 567 text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":126 568 text5 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":62 569 text8 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":65 56A text8 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":68 574 text8 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":69 580 text8 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":65 584 text8 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":73 585 text7 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":77 585 text7 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":79 589 text7 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":84 58E text7 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":86 592 text7 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":87 595 text7 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":88 599 text7 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":89 59A text7 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":91 59B text7 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":150 59D text10 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":153 59E text10 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":154 5A3 text10 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":155 5A7 text10 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":156 5AA text10 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":155 5AB text10 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":158 5AC text14 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":161 5AC text14 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":162 5B1 text14 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":163 5B4 text14 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":165 5B6 text14 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":128 5BA text16 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":131 5BA text16 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":132 5C5 text16 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":131 5C6 text16 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":168 5C7 text11 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":171 5C7 text11 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":172 5CC text11 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":173 5CF text11 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":174 5D0 text11 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":173 5D1 text11 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":134 5D2 text12 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":137 5D2 text12 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":138 5D7 text12 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":139 5DA text12 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":140 5DB text12 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":139 5DC text12 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":142 5DD text13 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":145 5DD text13 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":146 5E2 text13 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":147 5E5 text13 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":148 5E6 text13 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":147 5E7 text13 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":56 5E8 text2 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":58 5EB text2 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":59 5ED text2 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":60 5EF text2 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":56 5F0 text9 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":58 5F1 text9 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":59 5F5 text9 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":60 5F7 text9 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":184 5F8 text15 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":187 5F8 text15 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":188 5FB text15 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":189 5FE text15 CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\I2C.c":190 5FF text15 CODE
+$startup.obj
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\startup.as":39 0 functab CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\startup.as":40 0 functab CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\startup.as":41 0 functab CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\startup.as":42 0 functab CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\startup.as":43 0 functab CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\startup.as":44 0 functab CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\startup.as":63 0 reset_vec CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\startup.as":68 0 reset_vec CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\startup.as":73 12 init CODE
+"D:\Engenharia da computação\2017-2\MICROCONTROLADORES\trabalho micro\I2C - 24C16\Código em C no MPLAB\startup.as":76 12 end_init CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___aldiv@counter 29 0 BANK0 1 cstackBANK0 I2C.obj
+__S0 2008 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_ISR 38 0 CODE 0 text6 I2C.obj
+__Hintentry 24 0 CODE 0 intentry -
+__Lintentry 8 0 CODE 0 intentry -
+__size_of_USART_WriteString 0 0 ABS 0 - I2C.obj
+__pintentry 8 0 CODE 0 intentry I2C.obj
+__CFG_PWRTE$ON 0 0 ABS 0 - I2C.obj
+_I2C_Read B58 0 CODE 0 text14 I2C.obj
+_OERR C1 0 ABS 0 - I2C.obj
+ISR@i 7B 0 COMMON 1 cstackCOMMON I2C.obj
+ISR@j 7A 0 COMMON 1 cstackCOMMON I2C.obj
+_I2C_Idle B74 0 CODE 0 text16 I2C.obj
+_main 9BA 0 CODE 0 maintext I2C.obj
+___sp 0 0 STACK 2 stack startup.obj
+btemp 7E 0 ABS 0 - I2C.obj
+ltemp 7E 0 ABS 0 - I2C.obj
+ttemp 7E 0 ABS 0 - I2C.obj
+wtemp 7E 0 ABS 0 - I2C.obj
+start 24 0 CODE 0 init startup.obj
+__end_of___aldiv 8DC 0 CODE 0 text4 I2C.obj
+_RCREG 1A 0 ABS 0 - I2C.obj
+_TRISC 87 0 ABS 0 - I2C.obj
+_TXREG 19 0 ABS 0 - I2C.obj
+reset_vec 0 0 CODE 0 reset_vec startup.obj
+_SPBRG 99 0 ABS 0 - I2C.obj
+_PORTC 7 0 ABS 0 - I2C.obj
+ltemp0 7E 0 ABS 0 - I2C.obj
+ttemp0 7E 0 ABS 0 - I2C.obj
+wtemp0 7E 0 ABS 0 - I2C.obj
+ltemp1 82 0 ABS 0 - I2C.obj
+ttemp1 81 0 ABS 0 - I2C.obj
+wtemp1 80 0 ABS 0 - I2C.obj
+ltemp2 86 0 ABS 0 - I2C.obj
+ttemp2 84 0 ABS 0 - I2C.obj
+wtemp2 82 0 ABS 0 - I2C.obj
+ltemp3 80 0 ABS 0 - I2C.obj
+ttemp3 87 0 ABS 0 - I2C.obj
+wtemp3 84 0 ABS 0 - I2C.obj
+ttemp4 7F 0 ABS 0 - I2C.obj
+wtemp4 86 0 ABS 0 - I2C.obj
+wtemp5 88 0 ABS 0 - I2C.obj
+wtemp6 7F 0 ABS 0 - I2C.obj
+interrupt_function 8 0 CODE 0 intentry I2C.obj
+__Hconfig 4010 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+__end_of__stringtab 60C 0 STRING 0 strings I2C.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_banco 7C 0 COMMON 1 bssCOMMON I2C.obj
+__end_of__stringdata 7BE 0 STRING 0 strings I2C.obj
+__end_of_USART_WriteChar BE0 0 CODE 0 text2 I2C.obj
+_I2C_Init A94 0 CODE 0 text5 I2C.obj
+__end_of_ISR 458 0 CODE 0 text6 I2C.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+_I2C_Stop B8E 0 CODE 0 text11 I2C.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+_PIE1bits 8C 0 ABS 0 - I2C.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_PIR1bits C 0 ABS 0 - I2C.obj
+_SSPADD 93 0 ABS 0 - I2C.obj
+___int_sp 0 0 STACK 2 stack startup.obj
+?___aldiv 20 0 BANK0 1 cstackBANK0 I2C.obj
+_SSPBUF 13 0 ABS 0 - I2C.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__end_of_I2C_Idle B8E 0 CODE 0 text16 I2C.obj
+_I2C_Write B3A 0 CODE 0 text10 I2C.obj
+__size_ofi1_USART_WriteChar 0 0 ABS 0 - I2C.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+stackhi 0 0 ABS 0 - startup.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 I2C.obj
+stacklo 0 0 ABS 0 - startup.obj
+saved_w 7E 0 ABS 0 - I2C.obj
+__Hinit 24 0 CODE 0 init -
+__Linit 24 0 CODE 0 init -
+__end_of_main A54 0 CODE 0 maintext I2C.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+end_of_initialization 30 0 CODE 0 cinit I2C.obj
+___aldiv@sign 2A 0 BANK0 1 cstackBANK0 I2C.obj
+__size_of_I2C_Stop 0 0 ABS 0 - I2C.obj
+__size_of_ISR 0 0 ABS 0 - I2C.obj
+__size_of_I2C_Write 0 0 ABS 0 - I2C.obj
+__size_of_I2C_Start 0 0 ABS 0 - I2C.obj
+_SSPCON2 91 0 ABS 0 - I2C.obj
+__stringtab 600 0 STRING 0 strings I2C.obj
+_RCSTAbits 18 0 ABS 0 - I2C.obj
+_TXSTAbits 98 0 ABS 0 - I2C.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__pstrings 600 0 STRING 0 strings I2C.obj
+_I2C_Start BA4 0 CODE 0 text12 I2C.obj
+__end_of_I2C_Write B58 0 CODE 0 text10 I2C.obj
+__end_of_USART_ReceiveChar B3A 0 CODE 0 text7 I2C.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+USART_WriteChar@USART_Data 20 0 BANK0 1 cstackBANK0 I2C.obj
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Lbank3 0 0 ABS 0 bank3 -
+___latbits 2 0 ABS 0 - I2C.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+_SSPCON2bits 91 0 ABS 0 - I2C.obj
+__ptext1 A54 0 CODE 0 text1 I2C.obj
+__ptext2 BD0 0 CODE 0 text2 I2C.obj
+__ptext3 8DC 0 CODE 0 text3 I2C.obj
+__ptext4 7BE 0 CODE 0 text4 I2C.obj
+__ptext5 A94 0 CODE 0 text5 I2C.obj
+__ptext6 38 0 CODE 0 text6 I2C.obj
+__ptext7 B0A 0 CODE 0 text7 I2C.obj
+__ptext8 AD2 0 CODE 0 text8 I2C.obj
+__ptext9 BE0 0 CODE 0 text9 I2C.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+_USART_WriteChar BD0 0 CODE 0 text2 I2C.obj
+__end_of__initialization 30 0 CODE 0 cinit I2C.obj
+USART_Init@Mode 33 0 BANK0 1 cstackBANK0 I2C.obj
+__size_of_I2C_NACK 0 0 ABS 0 - I2C.obj
+__size_of_USART_Init 0 0 ABS 0 - I2C.obj
+_SSPSTATbits 94 0 ABS 0 - I2C.obj
+__end_of_I2C_Stop BA4 0 CODE 0 text11 I2C.obj
+_entrada 7D 0 COMMON 1 bssCOMMON I2C.obj
+USART_WriteString@str 22 0 BANK0 1 cstackBANK0 I2C.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__end_of_I2C_Read B74 0 CODE 0 text14 I2C.obj
+__Hspace_0 2008 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+_posicao 3E 0 BANK0 1 bssBANK0 I2C.obj
+__Hspace_1 7E 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+i1_USART_WriteString AD2 0 CODE 0 text8 I2C.obj
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+USART_Init@BR 39 0 BANK0 1 cstackBANK0 I2C.obj
+__Hcinit 38 0 CODE 0 cinit -
+__Lcinit 2A 0 CODE 0 cinit -
+__CFG_FOSC$HS 0 0 ABS 0 - I2C.obj
+___aldiv 7BE 0 CODE 0 text4 I2C.obj
+_USART_WriteString A54 0 CODE 0 text1 I2C.obj
+__Hspace_3 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__size_of_main 0 0 ABS 0 - I2C.obj
+__size_of_USART_WriteChar 0 0 ABS 0 - I2C.obj
+__end_of_I2C_Init AD2 0 CODE 0 text5 I2C.obj
+_USART_Init 8DC 0 CODE 0 text3 I2C.obj
+_I2C_Restart BBA 0 CODE 0 text13 I2C.obj
+__size_of_I2C_Read 0 0 ABS 0 - I2C.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__pbssBANK0 3E 0 BANK0 1 bssBANK0 I2C.obj
+i1USART_WriteChar@USART_Data 70 0 COMMON 1 cstackCOMMON I2C.obj
+__ptext10 B3A 0 CODE 0 text10 I2C.obj
+__ptext11 B8E 0 CODE 0 text11 I2C.obj
+__ptext12 BA4 0 CODE 0 text12 I2C.obj
+USART_ReceiveChar@USART_Data 74 0 COMMON 1 cstackCOMMON I2C.obj
+__ptext13 BBA 0 CODE 0 text13 I2C.obj
+__ptext14 B58 0 CODE 0 text14 I2C.obj
+__ptext15 BF0 0 CODE 0 text15 I2C.obj
+__size_of_I2C_Restart 0 0 ABS 0 - I2C.obj
+__ptext16 B74 0 CODE 0 text16 I2C.obj
+__CFG_BOREN$OFF 0 0 ABS 0 - I2C.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__pbssCOMMON 7C 0 COMMON 1 bssCOMMON I2C.obj
+_INTCONbits B 0 ABS 0 - I2C.obj
+_SSPCONbits 14 0 ABS 0 - I2C.obj
+__size_of_I2C_Init 0 0 ABS 0 - I2C.obj
+__end_ofi1_USART_WriteString B0A 0 CODE 0 text8 I2C.obj
+__Hend_init 2A 0 CODE 0 end_init -
+__Lend_init 24 0 CODE 0 end_init -
+___aldiv@divisor 20 0 BANK0 1 cstackBANK0 I2C.obj
+_I2C_NACK BF0 0 CODE 0 text15 I2C.obj
+I2C_Write@Byte 72 0 COMMON 1 cstackCOMMON I2C.obj
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+i1_USART_WriteChar BE0 0 CODE 0 text9 I2C.obj
+__stringdata 60C 0 STRING 0 strings I2C.obj
+__size_of___aldiv 0 0 ABS 0 - I2C.obj
+USART_Init@BaudRate 2F 0 BANK0 1 cstackBANK0 I2C.obj
+intlevel0 0 0 CODE 0 functab startup.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - I2C.obj
+intlevel1 0 0 CODE 0 functab startup.obj
+intlevel2 0 0 CODE 0 functab startup.obj
+__end_of_I2C_NACK C00 0 CODE 0 text15 I2C.obj
+intlevel3 0 0 CODE 0 functab startup.obj
+intlevel4 0 0 CODE 0 functab startup.obj
+intlevel5 0 0 CODE 0 functab startup.obj
+__end_of_USART_WriteString A94 0 CODE 0 text1 I2C.obj
+_USART_ReceiveChar B0A 0 CODE 0 text7 I2C.obj
+__size_of_I2C_Idle 0 0 ABS 0 - I2C.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON I2C.obj
+__end_of_I2C_Start BBA 0 CODE 0 text12 I2C.obj
+__CFG_CPD$OFF 0 0 ABS 0 - I2C.obj
+start_initialization 2A 0 CODE 0 cinit I2C.obj
+___aldiv@quotient 2B 0 BANK0 1 cstackBANK0 I2C.obj
+__end_ofi1_USART_WriteChar BF0 0 CODE 0 text9 I2C.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__pmaintext 9BA 0 CODE 0 maintext I2C.obj
+__size_ofi1_USART_WriteString 0 0 ABS 0 - I2C.obj
+__initialization 2A 0 CODE 0 cinit I2C.obj
+__stringbase 60A 0 STRING 0 strings I2C.obj
+__CFG_CP$OFF 0 0 ABS 0 - I2C.obj
+__end_of_I2C_Restart BD0 0 CODE 0 text13 I2C.obj
+__end_of_USART_Init 9BA 0 CODE 0 text3 I2C.obj
+__CFG_LVP$OFF 0 0 ABS 0 - I2C.obj
+___aldiv@dividend 24 0 BANK0 1 cstackBANK0 I2C.obj
+__size_of_USART_ReceiveChar 0 0 ABS 0 - I2C.obj
+i1USART_WriteString@str 72 0 COMMON 1 cstackCOMMON I2C.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 3 2
+intentry 0 4 8 228 2
+config 0 2007 400E 1 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 1F 1
+strings 0 300 600 DF 2
+text4 0 3DF 7BE 221 2

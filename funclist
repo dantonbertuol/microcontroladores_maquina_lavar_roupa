@@ -1,0 +1,21 @@
+___aldiv: CODE, 991 0 143
+__stringtab: STRING, 768 0 6
+__stringdata: STRING, 774 0 217
+_USART_WriteChar: CODE, 1512 0 8
+_ISR: CODE, 28 0 528
+_I2C_Idle: CODE, 1466 0 13
+_main: CODE, 1245 0 77
+_I2C_Write: CODE, 1437 0 15
+_USART_ReceiveChar: CODE, 1413 0 24
+__initialization: CODE, 21 0 3
+_I2C_Stop: CODE, 1479 0 11
+_I2C_Read: CODE, 1452 0 14
+_I2C_Init: CODE, 1354 0 31
+i1_USART_WriteString: CODE, 1385 0 28
+_I2C_NACK: CODE, 1528 0 8
+_USART_WriteString: CODE, 1322 0 32
+_I2C_Start: CODE, 1490 0 11
+i1_USART_WriteChar: CODE, 1520 0 8
+_I2C_Restart: CODE, 1501 0 11
+_USART_Init: CODE, 1134 0 111
+Total: 1299
